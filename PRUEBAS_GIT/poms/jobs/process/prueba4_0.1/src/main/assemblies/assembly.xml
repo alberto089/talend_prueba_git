@@ -267,9 +267,6 @@
             <outputDirectory>${talend.job.name}</outputDirectory>
             <includes>
                 <include>org.example.pruebas_git.job:Prueba4:jar:0.1.0</include>
-                <include>org.example.pruebas_git.job:Prueba1:jar:0.1.0</include>
-                <include>org.example.pruebas_git.job:Prueba2:jar:0.1.0</include>
-                <include>org.example.pruebas_git.job:Prueba_Orquestados:jar:0.1.0</include>
             </includes>
             <outputFileNameMapping>${artifact.build.finalName}.${artifact.extension}</outputFileNameMapping>
             <useProjectArtifact>true</useProjectArtifact>

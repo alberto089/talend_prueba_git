@@ -9,9 +9,9 @@
     <relativePath>../../../</relativePath>
   </parent>
   <groupId>org.example.pruebas_git.job</groupId>
-  <artifactId>Prueba_Orquestados</artifactId>
+  <artifactId>Prueba4</artifactId>
   <version>0.1.0</version>
-  <name>PRUEBAS_GIT Prueba_Orquestados-0.1.0 (0.1,Job Designs)</name>
+  <name>PRUEBAS_GIT Prueba4-0.1.0 (0.1,Job Designs)</name>
   <properties>
     <output.resources.dir>${talend.job.name}/src/main/resources</output.resources.dir>
     <talend.job.applyContextToChildren>false</talend.job.applyContextToChildren>
@@ -19,12 +19,12 @@
     <current.int-resources.dir>${basedir}/src/main/resources</current.int-resources.dir>
     <talend.job.version>0.1</talend.job.version>
     <talend.project.name.lowercase>pruebas_git</talend.project.name.lowercase>
-    <talend.job.path>pruebas_git/prueba_orquestados_0_1</talend.job.path>
+    <talend.job.path>pruebas_git/prueba4_0_1</talend.job.path>
     <project.distribution-management.repository.id>${project.distributionManagement.repository.id}</project.distribution-management.repository.id>
     <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
     <talend.project.name>PRUEBAS_GIT</talend.project.name>
     <talend.product.version>7.2.1.20190909_1200_patch</talend.product.version>
-    <talend.job.finalName>prueba_orquestados_0_1</talend.job.finalName>
+    <talend.job.finalName>prueba4_0_1</talend.job.finalName>
     <talend.pigudf.groupid>org.example.pruebas_git.pigudf</talend.pigudf.groupid>
     <talend.routine.groupid>org.example.pruebas_git.code</talend.routine.groupid>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
@@ -33,8 +33,8 @@
     <talend.job.context>Default</talend.job.context>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
     <current.resources.dir>${basedir}/src/main/ext-resources</current.resources.dir>
-    <talend.job.name>Prueba_Orquestados</talend.job.name>
-    <talend.job.id>_B9tM0BdwEeqYBZCILLG6Gg</talend.job.id>
+    <talend.job.name>Prueba4</talend.job.name>
+    <talend.job.id>_cFAAcBddEeqQo8SlaQ9gOg</talend.job.id>
     <talend.project.id>0</talend.project.id>
     <talend.job.folder></talend.job.folder>
     <talend.job.framework></talend.job.framework>
@@ -121,21 +121,6 @@
       <groupId>org.example.pruebas_git.code</groupId>
       <artifactId>routines</artifactId>
       <version>7.2.1</version>
-    </dependency>
-    <dependency>
-      <groupId>org.example.pruebas_git.job</groupId>
-      <artifactId>Prueba1</artifactId>
-      <version>0.1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.example.pruebas_git.job</groupId>
-      <artifactId>Prueba4</artifactId>
-      <version>0.1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.example.pruebas_git.job</groupId>
-      <artifactId>Prueba2</artifactId>
-      <version>0.1.0</version>
     </dependency>
   </dependencies>
   <build>
