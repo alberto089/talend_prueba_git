@@ -12,8 +12,13 @@
     <module>code/routines</module>
     <module>jobs/process/prueba1_0.1</module>
     <module>jobs/process/prueba2_0.1</module>
+<<<<<<< HEAD
     <module>jobs/process/prueba_orquestados_0.1</module>
     <module>jobs/process/prueba4_0.1</module>
+=======
+    <module>jobs/process/prueba3_0.1</module>
+    <module>jobs/process/prueba_orquestador_0.1</module>
+>>>>>>> refs/remotes/origin/master
   </modules>
   <properties>
     <signer.version>7.2.1</signer.version>

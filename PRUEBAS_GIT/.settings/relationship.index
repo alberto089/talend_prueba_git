@@ -13,7 +13,11 @@
     "version" : "Latest",
     "type" : "job"
   }, {
+<<<<<<< HEAD
     "id" : "PRUEBAS_GIT:_cFAAcBddEeqQo8SlaQ9gOg",
+=======
+    "id" : "PRUEBAS_GIT:_avciwBddEeqQo8SlaQ9gOg",
+>>>>>>> refs/remotes/origin/master
     "version" : "Latest",
     "type" : "job"
   }, {
@@ -153,7 +157,11 @@
   } ]
 }, {
   "baseItem" : {
+<<<<<<< HEAD
     "id" : "_cFAAcBddEeqQo8SlaQ9gOg",
+=======
+    "id" : "_avciwBddEeqQo8SlaQ9gOg",
+>>>>>>> refs/remotes/origin/master
     "version" : "0.1",
     "type" : "job"
   },

@@ -1,5 +1,5 @@
 
-package pruebas_git.prueba2_0_1;
+package pruebas_git.prueba3_0_1;
 
 import routines.Numeric;
 import routines.DataOperation;
@@ -35,15 +35,15 @@ import java.util.Comparator;
 @SuppressWarnings("unused")
 
 /**
- * Job: Prueba2 Purpose: <br>
+ * Job: Prueba3 Purpose: <br>
  * Description:  <br>
  * @author alberto.vadillo.munoz@devoteam.com
  * @version 7.2.1.20190909_1200_patch
  * @status 
  */
-public class Prueba2 implements TalendJob {
-	static {System.setProperty("TalendJob.log", "Prueba2.log");}
-	private static org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(Prueba2.class);
+public class Prueba3 implements TalendJob {
+	static {System.setProperty("TalendJob.log", "Prueba3.log");}
+	private static org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(Prueba3.class);
 
 protected static void logIgnoredError(String message, Throwable cause) {
        log.error(message, cause);
@@ -113,7 +113,7 @@ protected static void logIgnoredError(String message, Throwable cause) {
 		return this.context;
 	}
 	private final String jobVersion = "0.1";
-	private final String jobName = "Prueba2";
+	private final String jobName = "Prueba3";
 	private final String projectName = "PRUEBAS_GIT";
 	public Integer errorCode = null;
 	private String currentComponent = "";
@@ -143,7 +143,7 @@ private RunStat runStat = new RunStat();
 		globalMap.put(KEY_DB_DATASOURCES_RAW, new java.util.HashMap<String, javax.sql.DataSource>(dataSources));
 	}
 
-	JobStructureCatcherUtils talendJobLog = new JobStructureCatcherUtils(jobName, "_ZkoVcBddEeqQo8SlaQ9gOg", "0.1");
+	JobStructureCatcherUtils talendJobLog = new JobStructureCatcherUtils(jobName, "_avciwBddEeqQo8SlaQ9gOg", "0.1");
 	org.talend.job.audit.JobAuditLogger auditLogger_talendJobLog = null;
 
 private final java.io.ByteArrayOutputStream baos = new java.io.ByteArrayOutputStream();
@@ -227,14 +227,14 @@ private class TalendException extends Exception {
 			} else {
 				e.printStackTrace();
 				e.printStackTrace(errorMessagePS);
-				Prueba2.this.exception = e;
+				Prueba3.this.exception = e;
 			}
 		}
 		if (!(e instanceof TalendException)) {
 		try {
 			for (java.lang.reflect.Method m : this.getClass().getEnclosingClass().getMethods()) {
 				if (m.getName().compareTo(currentComponent + "_error") == 0) {
-					m.invoke(Prueba2.this, new Object[] { e , currentComponent, globalMap});
+					m.invoke(Prueba3.this, new Object[] { e , currentComponent, globalMap});
 					break;
 				}
 			}
@@ -295,8 +295,8 @@ resumeUtil.addLog("SYSTEM_LOG", "NODE:"+ errorComponent, "", Thread.currentThrea
 	
 
 public static class row1Struct implements routines.system.IPersistableRow<row1Struct> {
-    final static byte[] commonByteArrayLock_PRUEBAS_GIT_Prueba2 = new byte[0];
-    static byte[] commonByteArray_PRUEBAS_GIT_Prueba2 = new byte[0];
+    final static byte[] commonByteArrayLock_PRUEBAS_GIT_Prueba3 = new byte[0];
+    static byte[] commonByteArray_PRUEBAS_GIT_Prueba3 = new byte[0];
 
 	
 			    public Integer newColumn;
@@ -330,7 +330,7 @@ public static class row1Struct implements routines.system.IPersistableRow<row1St
 
     public void readData(ObjectInputStream dis) {
 
-		synchronized(commonByteArrayLock_PRUEBAS_GIT_Prueba2) {
+		synchronized(commonByteArrayLock_PRUEBAS_GIT_Prueba3) {
 
         	try {
 
@@ -575,7 +575,7 @@ public void tFixedFlowInput_1Process(final java.util.Map<String, Object> globalM
 
 	    for (int i_tFixedFlowInput_1 = 0 ; i_tFixedFlowInput_1 < 1 ; i_tFixedFlowInput_1++) {
 	                	            	
-    	            		row1.newColumn = 2;
+    	            		row1.newColumn = 3;
     	            	
  
 
@@ -1238,11 +1238,11 @@ end_Hash.put("talendJobLog", System.currentTimeMillis());
     
 
     public static void main(String[] args){
-        final Prueba2 Prueba2Class = new Prueba2();
+        final Prueba3 Prueba3Class = new Prueba3();
 
-        int exitCode = Prueba2Class.runJobInTOS(args);
+        int exitCode = Prueba3Class.runJobInTOS(args);
 	        if(exitCode==0){
-		        log.info("TalendJob: 'Prueba2' - Done.");
+		        log.info("TalendJob: 'Prueba3' - Done.");
 	        }
 
         System.exit(exitCode);
@@ -1297,7 +1297,7 @@ end_Hash.put("talendJobLog", System.currentTimeMillis());
 				}
 				org.apache.log4j.Logger.getRootLogger().setLevel(log.getLevel());
     	    }
-        	log.info("TalendJob: 'Prueba2' - Start.");
+        	log.info("TalendJob: 'Prueba3' - Start.");
     	
     	
     	
@@ -1349,9 +1349,9 @@ end_Hash.put("talendJobLog", System.currentTimeMillis());
 
         try {
             //call job/subjob with an existing context, like: --context=production. if without this parameter, there will use the default context instead.
-            java.io.InputStream inContext = Prueba2.class.getClassLoader().getResourceAsStream("pruebas_git/prueba2_0_1/contexts/" + contextStr + ".properties");
+            java.io.InputStream inContext = Prueba3.class.getClassLoader().getResourceAsStream("pruebas_git/prueba3_0_1/contexts/" + contextStr + ".properties");
             if (inContext == null) {
-                inContext = Prueba2.class.getClassLoader().getResourceAsStream("config/contexts/" + contextStr + ".properties");
+                inContext = Prueba3.class.getClassLoader().getResourceAsStream("config/contexts/" + contextStr + ".properties");
             }
             if (inContext != null) {
                 //defaultProps is in order to keep the original context value
@@ -1468,7 +1468,7 @@ this.globalResumeTicket = true;//to run tPostJob
 
         endUsedMemory = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
         if (false) {
-            System.out.println((endUsedMemory - startUsedMemory) + " bytes memory increase when running : Prueba2");
+            System.out.println((endUsedMemory - startUsedMemory) + " bytes memory increase when running : Prueba3");
         }
 		if(enableLogStash) {
 	        talendJobLog.addJobEndMessage(startTime, end, status);
@@ -1639,9 +1639,5 @@ if (execStat) {
 }
 /************************************************************************************************
  *     43644 characters generated by Talend Cloud Big Data 
-<<<<<<< HEAD
- *     on the 5 de diciembre de 2019 16:05:48 CET
-=======
- *     on the 5 de diciembre de 2019 16:06:09 CET
->>>>>>> refs/remotes/origin/master
+ *     on the 5 de diciembre de 2019 16:06:10 CET
  ************************************************************************************************/
